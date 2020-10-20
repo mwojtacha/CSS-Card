@@ -1,0 +1,9 @@
+.cont{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    background: red;
+    width: 400px;
+    height: 900px;
+}
