@@ -11,6 +11,10 @@
     align-items: center;
     flex-direction: column;
 }
+.calosc{
+  display: flex;
+  height: 450px;
+}
 .card1{
   position: relative;
   height: 500px;
@@ -19,6 +23,16 @@
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.niebieskie{
+  background: blue;
+  opacity: 0;
+  height: 500px;
+  width: 300px;
+  position: absolute;
+  top: 0px;
+  border-radius: 20px 20px 0px 0px;
+  transition: 2s;
 }
 .card{
     position: absolute;
@@ -33,6 +47,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    transition: 2s;
 }
 .gorny{
   position: absolute;
@@ -68,11 +83,15 @@
   justify-content: center;
   align-items: center;
 }
-.card:hover {
+.calosc:hover .card{
     animation: animacja 1s 1;
     height: 400px;
     top: 250px;
   }
-  .card:hover .ukryty{
+  .calosc:hover .ukryty{
     display: block;
   }
+.calosc:hover .niebieskie{
+  opacity: 0.5;
+  transition: 1s;
+}
