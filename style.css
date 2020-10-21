@@ -7,14 +7,16 @@
 *{
   font-family: 'Sofia', sans-serif;
 }
+body{
+  background: rgb(205,195,195);
+    background: linear-gradient(167deg, rgba(205,195,195,1) 0%, rgba(27,172,204,1) 22%, rgba(83,172,191,1) 51%, rgba(0,212,255,1) 87%, rgba(84,190,212,1) 100%);
+}
 .cont{
     display: flex;
     height: 100vh;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    background: rgb(205,195,195);
-    background: linear-gradient(167deg, rgba(205,195,195,1) 0%, rgba(27,172,204,1) 22%, rgba(83,172,191,1) 51%, rgba(0,212,255,1) 87%, rgba(84,190,212,1) 100%);
     padding: 20px;
 }
 .calosc{
@@ -112,7 +114,7 @@
 .ukryty{
   display: none;
   position: absolute;
-  top: 200px;
+  top: 150px;
 }
 .kwadraty{
   display: flex;
@@ -124,7 +126,7 @@
 .kwadrat{
   height: 90px;
   width: 90px;
-  background: lightskyblue;
+  background: white;
   border-radius: 10px 10px 10px 10px;
   display: flex;
   justify-content: center;
@@ -153,6 +155,18 @@
 .poletxt{
   font-size: 30px;
   color: white;
+  text-align: center;
+  margin: 50px;
+}
+.biuro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  font-style: italic;
+  font-weight: bold;
+  transform: scaleY(1.6);
 }
 
 
@@ -177,6 +191,6 @@
   border: 5px solid white;
 }
 .kwadrat:hover{
-  background: white;
+  background: lightblue;
   cursor: pointer;
 }
