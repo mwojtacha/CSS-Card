@@ -1,3 +1,9 @@
+@keyframes animacja{
+  0%{height: 150px;
+  top: 500px;}
+  100%{height: 400px;
+    top: 250px;}
+}
 .cont{
     display: flex;
     height: 100vh;
@@ -7,20 +13,35 @@
 }
 .card1{
   position: relative;
-  height: 400px;
+  height: 500px;
   width: 300px;
   background-image: url("gory.jpg");
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .card{
     position: absolute;
-    top: 400px;
-    background: green;
+    top: 500px;
+    background: lightgray;
     width: 300px;
-    height: 300px;
+    height: 150px;
     border-radius: 0px 0px 20px 20px;
+    color: darkblue;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+}
+.ukryty{
+  display: none;
+  position: absolute;
+  top: 300px;
 }
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    animation: animacja 1s 1;
+    height: 400px;
+    top: 250px;
+  }
+  .card:hover .ukryty{
+    display: block;
   }
