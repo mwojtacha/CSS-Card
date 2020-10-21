@@ -13,6 +13,9 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    background: rgb(205,195,195);
+    background: linear-gradient(167deg, rgba(205,195,195,1) 0%, rgba(27,172,204,1) 22%, rgba(83,172,191,1) 51%, rgba(0,212,255,1) 87%, rgba(84,190,212,1) 100%);
+    padding: 40px;
 }
 .calosc{
   display: flex;
@@ -28,7 +31,7 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .niebieskie{
-  background: blue;
+  background: #0a4870;
   opacity: 0;
   height: 500px;
   width: 300px;
@@ -40,9 +43,16 @@
   justify-content: center;
 }
 .przycisk{
-  height: 100px;
-  width: 100px;
-  padding: 10px;
+  height: 40px;
+  width: 150px;
+  margin: 50px;
+  background: white;
+  color: black;
+  font-size: 20px;
+  border: 5px solid black;
+  opacity: 1;
+  text-decoration: none;
+  display: inline-block;
 }
 .card{
     position: absolute;
@@ -99,8 +109,16 @@
   align-items: center;
   flex-direction: column;
   padding: 10px;
-  font-size: 20px;
-  color: orange;
+  font-size: 25px;
+  color: #ec992c;
+}
+.kwadrat.a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 25px;
 }
 
 
@@ -115,6 +133,12 @@
     display: block;
   }
 .calosc:hover .niebieskie{
-  opacity: 0.5;
+  opacity: 0.35;
   transition: 1s;
+}
+.przycisk:hover{
+  background: black;
+  color: white;
+  font-size: 20px;
+  border: 5px solid white;
 }
