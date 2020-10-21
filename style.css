@@ -12,7 +12,7 @@
     height: 100vh;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     background: rgb(205,195,195);
     background: linear-gradient(167deg, rgba(205,195,195,1) 0%, rgba(27,172,204,1) 22%, rgba(83,172,191,1) 51%, rgba(0,212,255,1) 87%, rgba(84,190,212,1) 100%);
     padding: 20px;
@@ -26,6 +26,24 @@
   height: 500px;
   width: 300px;
   background-image: url("gory.jpg");
+  background-size: cover;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card2{
+  position: relative;
+  height: 500px;
+  width: 300px;
+  background-image: url("zamek.jpg");
+  background-size: cover;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card3{
+  position: relative;
+  height: 500px;
+  width: 300px;
+  background-image: url("morze.jpeg");
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -73,6 +91,10 @@
   position: absolute;
   top: 20px;
   color: darkblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .linia{
   background: darkblue;
@@ -81,6 +103,11 @@
 }
 .wiado{
   margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
 }
 .ukryty{
   display: none;
@@ -124,7 +151,7 @@
   color: grey;
 }
 .poletxt{
-  font-size: 60px;
+  font-size: 30px;
   color: white;
 }
 
