@@ -10,12 +10,12 @@
 .cont{
     display: flex;
     height: 100vh;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     background: rgb(205,195,195);
     background: linear-gradient(167deg, rgba(205,195,195,1) 0%, rgba(27,172,204,1) 22%, rgba(83,172,191,1) 51%, rgba(0,212,255,1) 87%, rgba(84,190,212,1) 100%);
-    padding: 40px;
+    padding: 20px;
 }
 .calosc{
   display: flex;
@@ -46,7 +46,7 @@
   height: 40px;
   width: 150px;
   margin: 50px;
-  background: white;
+  background: none;
   color: black;
   font-size: 20px;
   border: 5px solid black;
@@ -120,6 +120,13 @@
   padding: 10px;
   font-size: 25px;
 }
+.wiado{
+  color: grey;
+}
+.poletxt{
+  font-size: 60px;
+  color: white;
+}
 
 
 
@@ -141,4 +148,8 @@
   color: white;
   font-size: 20px;
   border: 5px solid white;
+}
+.kwadrat:hover{
+  background: white;
+  cursor: pointer;
 }
