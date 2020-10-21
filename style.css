@@ -1,9 +1,26 @@
 .cont{
     display: flex;
+    height: 100vh;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.card1{
+  position: relative;
+  height: 400px;
+  width: 300px;
+  background-image: url("gory.jpg");
+  background-size: cover;
+  border-radius: 20px 20px 0px 0px;
 }
 .card{
-    background: red;
-    width: 400px;
-    height: 900px;
+    position: absolute;
+    top: 400px;
+    background: green;
+    width: 300px;
+    height: 300px;
+    border-radius: 0px 0px 20px 20px;
 }
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
