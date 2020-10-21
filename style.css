@@ -38,7 +38,11 @@
   transition: 2s;
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+.przycisk{
+  height: 100px;
+  width: 100px;
+  padding: 10px;
 }
 .card{
     position: absolute;
