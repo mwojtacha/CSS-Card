@@ -31,11 +31,42 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     display: flex;
     justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.gorny{
+  position: absolute;
+  top: 20px;
+  color: darkblue;
+}
+.linia{
+  background: darkblue;
+  height: 3px;
+  width: 250px;
+}
+.wiado{
+  margin: 20px;
 }
 .ukryty{
   display: none;
   position: absolute;
-  top: 300px;
+  top: 200px;
+}
+.kwadraty{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.kwadrat{
+  height: 90px;
+  width: 90px;
+  background: lightskyblue;
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card:hover {
     animation: animacja 1s 1;
