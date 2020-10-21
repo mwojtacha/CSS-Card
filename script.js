@@ -39,3 +39,17 @@ const rezerwacja3={
     },
 }
 rezerwacja3.init();
+
+const rezerwacja4={
+    text: document.getElementById("text"),
+    btn: document.getElementById("btnd"),
+
+    btn1:function(){
+        this.text.innerHTML="ZAREZERWOWANO POMYŚLNIE WYCIECZKĘ DO WARSZAWY";
+    },
+
+    init:function(){
+        this.btn.addEventListener('click',this.btn1.bind(rezerwacja4));
+    },
+}
+rezerwacja4.init();

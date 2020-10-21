@@ -8,20 +8,20 @@
   font-family: 'Sofia', sans-serif;
 }
 body{
-  background: rgb(205,195,195);
-    background: linear-gradient(167deg, rgba(205,195,195,1) 0%, rgba(27,172,204,1) 22%, rgba(83,172,191,1) 51%, rgba(0,212,255,1) 87%, rgba(84,190,212,1) 100%);
+  background: lightskyblue;
 }
 .cont{
     display: flex;
     height: 100vh;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
     padding: 20px;
     flex-wrap: wrap;
 }
 .calosc{
-  margin: 120px;
+  margin: 70px;
+  margin-top: 150px;
   display: flex;
   height: 450px;
 }
@@ -48,6 +48,15 @@ body{
   height: 500px;
   width: 300px;
   background-image: url("morze.jpeg");
+  background-size: cover;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card4{
+  position: relative;
+  height: 500px;
+  width: 300px;
+  background-image: url("warszawa.jpg");
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -135,6 +144,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 1s;
 }
 .kwadrat.b{
   display: flex;
@@ -197,6 +207,8 @@ body{
 }
 .kwadrat:hover{
   background: rgb(156, 179, 179);
+  border: 3px black solid;
+  transition: 0.5s;
   cursor: pointer;
 }
 .biuro:hover{
